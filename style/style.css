@@ -82,14 +82,31 @@ a:hover                        { text-decoration:none; }
 
     .btn-connect {
         float: right;
-        height: 49px;
-        padding-left: 50px;
+        margin-top: 7px;
+        padding: 0;
         border: none;
         font: 18px 'PT Serif', serif;
-        background: url("../images/icon_conect.png") no-repeat;
+        background: none;
         color: #fff;
         text-align: left;
     }
+        .btn-connect:before {
+            content: '';
+            display: inline-block;
+            height: 78px;
+            width: 78px;
+            vertical-align: middle;
+            background: url("../images/icon_conect.png") #d54323 center no-repeat;
+
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+        }
+        .btn-connect span {
+            display: inline-block;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
     .header .center {
         display: inline-block;
         width: 375px;
@@ -319,3 +336,8 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1900px) {
+    body {
+        background-size: 100% 100%;
+    }
+}
