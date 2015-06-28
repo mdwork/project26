@@ -1,8 +1,8 @@
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
-html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px 'Roboto Slab', serif; background: url("../images/bg.jpg") no-repeat top center #fff; color:#000; }
+html,body                       { width:100%; height:100%; min-width: 1350px; }
+body                            { padding:0; margin:0; font:12px 'Roboto Slab', serif; background: url("../images/bg.jpg") no-repeat top center #fff; color:#fff; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -17,7 +17,7 @@ input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px 'Roboto Slab', serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px 'Roboto Slab', serif; color:#fff; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -49,7 +49,7 @@ a:hover                        { text-decoration:none; }
 	margin: 0 auto;
 
     font-family: 'Ubuntu', sans-serif;
-    font-family: 'PT Serif', serif;
+
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
@@ -62,24 +62,139 @@ a:hover                        { text-decoration:none; }
 	width: 1350px;
 	margin: 0 auto;
 }
+.wrapper {
+    min-height: 100%;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 70px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.header {
+    text-align: center;
+}
+    .logo,
+    a.logo {
+        float: left;
+        margin: 115px 0 0 180px;
+    }
 
+    .btn-connect {
+        float: right;
+        height: 49px;
+        padding-left: 50px;
+        border: none;
+        font: 18px 'PT Serif', serif;
+        background: url("../images/icon_conect.png") no-repeat;
+        color: #fff;
+        text-align: left;
+    }
+    .header .center {
+        display: inline-block;
+        width: 375px;
+        text-align: right;
+    }
+        .icon-bag,
+        .icon-man {
+            float: left;
+            width: 58px;
+            height: 58px;
+            background: no-repeat center;
+            text-indent: -9999px;
+            text-align: left;
+        }
+        .icon-bag {
+            background-image: url("../images/bag.png");
+            background-color: #0076b3;
+        }
+        .icon-man {
+            background-image: url("../images/man.png");
+            background-color: #81b3e1;
+        }
+        .tell,
+        .tell a {
+            font-family: 'PT Serif', serif;
+        }
+        .tell {
+            float: right;
+            margin-top: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tell a {
+            display: block;
+            font-size: 26px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+            .tell span {
+                font-weight: 400;
+            }
+    .header h1 {
+        width: 600px;
+        margin: 40px 0 0 520px;
+        text-align: left;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .footer {
-    height: 40px;
+    height: 70px;
+    margin-top: -70px;
+    color: #000;
+    font: 14px 'PT Serif', serif;
 }
+    .list-soc-links {
+        overflow: hidden;
+        float: right;
+        margin-top: 10px;
+    }
+        .list-soc-links li {
+            float: left;
+            height: 32px;
+            margin-left: 4px;
+            border: 3px solid #ffffff;
+            text-indent: -9999px;
+            background: #fff no-repeat url("../images/soc_links.png");
+            transition: .3s;
+
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+        .list-soc-links li:hover {
+            opacity: .8;
+        }
+        .list-soc-links .google {
+            background-position-x: -42px;
+        }
+        .list-soc-links .twitter {
+            background-position-x: -84px;
+        }
+        .list-soc-links .soc {
+            background-position-x: -126px;
+        }
+            .list-soc-links a {
+                display: block;
+                width: 32px;
+                height: 32px;
+
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
